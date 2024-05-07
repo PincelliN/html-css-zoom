@@ -62,6 +62,9 @@ main .person {
   text-align: center;
   font-size: small;
 }
+.person .fa-microphone{
+  display: none;
+}
 
 /* footer css */
 footer {
@@ -89,6 +92,12 @@ li {
 li > .fa-solid {
   font-size: larger;
 }
+li .fa-microphone-slash{
+  display: none;
+}
+li .fa-video-slash{
+  display: none;
+}
 li > .fa-chevron-up {
   font-size: small;
   vertical-align: super;
@@ -100,7 +109,6 @@ li p {
   font-size: medium;
 }
 .end{ 
- /*   padding:20px; */
   background-color: rgba(255, 255, 255, 0.3);
   align-self: stretch;
  line-height: 33px;
@@ -109,12 +117,30 @@ li p {
   color: rgb(145, 7, 7);
   cursor: pointer;
 }
-li:hover {
-  color: black;
-}
+
+/* hover bonus */
 .end span:hover {
   color: blue;
 }
 main .person:hover{
-   background-image:none
+   background-image:url(../img/images.jpg)
+}
+.mic:hover .fa-microphone{
+  display: none;
+}
+.mic:hover .fa-microphone-slash{
+  display: block;
+}
+.video:hover .fa-video{
+  display: none;
+}
+.video:hover .fa-video-slash{
+  display: block;
+}
+
+.person:hover .fa-microphone-slash{
+  display: none;
+}
+.person:hover .fa-microphone{
+  display:inline-block;
 }
