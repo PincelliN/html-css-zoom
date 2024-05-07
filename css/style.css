@@ -36,13 +36,16 @@ header a{
 footer{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     bottom: 0;
     width: 100%;
     background-color: rgba(36, 36, 36, 0.5);
-    padding: 20px;
+padding: 10px;
+  
 }
 ul{
+   
     list-style: none;
 }
 li{
@@ -55,4 +58,15 @@ li>.fa-solid{
 }
 li>.fa-chevron-up{
     font-size: small;
+    vertical-align: super;
 }
+li> .fa-share-from-square{
+    color: green;
+}
+footer .end {
+    color: red;
+    margin-top: 0;
+    background-color: rgba(255, 255, 255,0.3);
+    align-self: center;
+}
+
