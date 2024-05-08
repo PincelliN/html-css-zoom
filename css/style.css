@@ -5,7 +5,7 @@
   font-family: "Lato", sans-serif;
 }
 .container {
-/*   position: relative; */
+  /*   position: relative; */
   height: 100vh;
   width: 100%;
   background-color: black;
@@ -17,11 +17,8 @@ a {
 }
 /* css header */
 header {
-  right: 0;
-  top: 0;
+  text-align: right;
   padding: 10px;
-  position: fixed;
-  z-index: 2;
 }
 header a {
   border: 1px solid white;
@@ -33,41 +30,41 @@ header a {
 /* css main */
 main {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  /*  overflow-y: auto; */
+  overflow-y: auto;
   padding: 40px auto;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   padding: 50px;
-  height: 100%;
+  height: 85%;
 }
 
 main .person {
-  width: calc((100% / 7) - 20px);
-  height: calc((100% / 5) - 20px);
+  flex-basis: 200px;
   margin: 10px;
+  flex-shrink: 0;
   position: relative;
- } 
-.person img{
+}
+.person img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.person .jd{
+.person .jd {
   display: none;
 }
 
 .person span {
-  position: absolute;
-  bottom: 0;
+  position:absolute;
   left: 0;
+  bottom: 0;
   border-radius: 5px;
   padding: 3px;
   background-color: rgba(255, 255, 255, 0.3);
   text-align: center;
   font-size: small;
-  z-index: 1;
 }
-.person .fa-microphone{
+.person .fa-microphone {
   display: none;
 }
 
@@ -76,14 +73,14 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   width: 100%;
   background-color: rgb(36, 36, 36);
   z-index: 1;
 }
-footer div{
-   padding: 10px;
+footer div {
+  padding: 10px;
 }
 ul {
   list-style: none;
@@ -97,10 +94,10 @@ li {
 li > .fa-solid {
   font-size: larger;
 }
-li .fa-microphone-slash{
+li .fa-microphone-slash {
   display: none;
 }
-li .fa-video-slash{
+li .fa-video-slash {
   display: none;
 }
 li > .fa-chevron-up {
@@ -113,12 +110,12 @@ li > .fa-share-from-square {
 li p {
   font-size: medium;
 }
-.end{ 
+.end {
   background-color: rgba(255, 255, 255, 0.3);
   align-self: stretch;
- line-height: 33px;
+  line-height: 33px;
 }
- .end>span {
+.end > span {
   color: rgb(145, 7, 7);
   cursor: pointer;
 }
@@ -128,28 +125,28 @@ li p {
   color: blue;
 }
 
-.person:hover img{
+.person:hover img {
   display: none;
 }
-.person:hover .jd{
+.person:hover .jd {
   display: block;
 }
-.mic:hover .fa-microphone{
+.mic:hover .fa-microphone {
   display: none;
 }
-.mic:hover .fa-microphone-slash{
+.mic:hover .fa-microphone-slash {
   display: block;
 }
-.video:hover .fa-video{
+.video:hover .fa-video {
   display: none;
 }
-.video:hover .fa-video-slash{
+.video:hover .fa-video-slash {
   display: block;
 }
 
-.person:hover .fa-microphone-slash{
+.person:hover .fa-microphone-slash {
   display: none;
 }
-.person:hover .fa-microphone{
-  display:inline-block;
+.person:hover .fa-microphone {
+  display: inline-block;
 }
